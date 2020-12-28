@@ -1,0 +1,56 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod-1
+  labels:
+    course: docker
+    trainer: Naushad
+    mode: online
+    duration: 24hrs
+spec:
+  containers:
+  - name: example-pod-1
+    image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod-2
+  labels:
+    course: Rancher
+    trainer: Naushad
+    mode: online
+    duration: 60hrs
+spec:
+  containers:
+  - name: example-pod-2
+    image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod-3
+  labels:
+    course: OpenShift
+    trainer: Naushad
+    mode: offline
+    duration: 72hrs
+spec:
+  containers:
+  - name: example-pod-3
+    image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-pod-4
+  labels:
+    course: kubernetes
+    trainer: Naushad
+    mode: online
+    duration: 50hrs
+spec:
+  containers:
+  - name: example-pod-4
+    image: nginx
